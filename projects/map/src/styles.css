@@ -1,0 +1,118 @@
+app-root {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+app-root .map {
+  position: relative;
+  width: 774px;
+  height: 582px;
+  background-size: 48px 48px;
+  background-image: linear-gradient(to right, #54585a 1px, transparent 1px), linear-gradient(to bottom, #54585a 1px, transparent 1px);
+  border: 3px solid #54585a;
+  overflow: hidden;
+}
+
+app-root .users {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+app-root .user, app-root .cookie {
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  width: 28.8px;
+  height: 28.8px;
+  border-radius: 50%;
+  margin: 9.6px;
+  text-align: center;
+  line-height: 28.8px;
+  font-weight: bold;
+}
+
+app-root .cookie {
+  transition: none;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  border-radius: 0;
+}
+
+app-root .cookie img {
+  width: 100%;
+}
+
+app-users-list {
+  width: 768px;
+  padding: 10px;
+}
+
+app-users-list .users-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+app-users-list .users-list li {
+  padding: 2px 0;
+  flex: 0 0 33%;
+}
+
+app-users-list .winner, app-users-list .start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 4em;
+}
+
+app-users-list .winner h2, app-users-list .start-screen h2 {
+  font-size: 2em;
+}
+
+app-user-card .dot {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+app-user-card .dot.middle {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+}
+
+app-user-card .dot.big {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  font-size: 36px;
+}

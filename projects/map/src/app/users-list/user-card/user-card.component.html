@@ -1,0 +1,2 @@
+<span class="dot" [ngStyle]="{'background-color': user.color}">{{ user.name.substr(0,1) }}</span>
+<span>{{ user.name }}<ng-container *ngIf="showScore"> - {{ user.score || 0 }}</ng-container></span>

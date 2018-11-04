@@ -1,9 +1,6 @@
 <ul class="users-list">
   <ng-container *ngFor="let user of (users$ | async) | usersListSort">
-    <li>
-      <span class="dot" [ngStyle]="{'background-color': user.color}">{{ user.name.substr(0,1) }}</span>
-      {{ user.name }} - {{ user.score || 0 }}
-    </li>
+    <li><app-user-card [user]="user" [showScore]="true"></app-user-card></li>
   </ng-container>
 </ul>
 

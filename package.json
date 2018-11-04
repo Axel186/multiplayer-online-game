@@ -1,5 +1,5 @@
 {
-  "name": "game-test",
+  "name": "simple-multiplayer-game",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

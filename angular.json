@@ -23,7 +23,7 @@
               "projects/controller/src/assets"
             ],
             "styles": [
-              "projects/controller/src/styles.sass"
+              "projects/controller/src/styles.css"
             ],
             "scripts": []
           },
@@ -72,7 +72,7 @@
             "tsConfig": "projects/controller/tsconfig.spec.json",
             "karmaConfig": "projects/controller/karma.conf.js",
             "styles": [
-              "projects/controller/src/styles.sass"
+              "projects/controller/src/styles.css"
             ],
             "scripts": [],
             "assets": [
@@ -142,7 +142,7 @@
               "projects/map/src/assets"
             ],
             "styles": [
-              "projects/map/src/styles.sass"
+              "projects/map/src/styles.css"
             ],
             "scripts": []
           },
@@ -191,7 +191,7 @@
             "tsConfig": "projects/map/tsconfig.spec.json",
             "karmaConfig": "projects/map/karma.conf.js",
             "styles": [
-              "projects/map/src/styles.sass"
+              "projects/map/src/styles.css"
             ],
             "scripts": [],
             "assets": [

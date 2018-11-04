@@ -6,6 +6,7 @@ import {ControllerPageComponent} from './controller-page/controller-page.compone
 import {LoginPageComponent} from './login-page/login-page.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {UsersListModule} from '../../../map/src/app/users-list/users-list.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
