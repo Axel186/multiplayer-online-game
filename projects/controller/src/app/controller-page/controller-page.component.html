@@ -1,0 +1,32 @@
+<header>{{ user.name }}</header>
+
+<div class="container">
+
+  <div class="loading" *ngIf="loading">
+    Wait for you turn...
+  </div>
+
+  <div class="arrows" *ngIf="!(loading)">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button class="btn btn-primary btn-block" (click)="onButtonPress('up')">Up</button>
+      </div>
+      <div class="col-4"></div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-4">
+        <button class="btn btn-primary btn-block" (click)="onButtonPress('left')">Left</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary btn-block" (click)="onButtonPress('down')">Down</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary btn-block" (click)="onButtonPress('right')">Right</button>
+      </div>
+    </div>
+  </div>
+</div>

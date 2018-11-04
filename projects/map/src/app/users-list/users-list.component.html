@@ -1,0 +1,20 @@
+<ul class="users-list">
+  <ng-container *ngFor="let user of (users$ | async) | usersListSort">
+    <li>
+      <span class="dot" [ngStyle]="{'background-color': user.color}">{{ user.name.substr(0,1) }}</span>
+      {{ user.name }} - {{ user.score || 0 }}
+    </li>
+  </ng-container>
+</ul>
+
+<div *ngIf="showStartButton$ | async" class="start-screen">
+  <button class="btn btn-lg btn-primary" (click)="start()">Start the game</button>
+</div>
+
+<div *ngIf="isWinner$ | async; let winner" class="winner">
+  <h2>WINNER!</h2>
+  <br><br>
+
+  <span class="dot big" [ngStyle]="{'background-color': winner.color}">{{ winner.name.substr(0,1) }}</span>
+  <p>{{ winner.name }}</p>
+</div>

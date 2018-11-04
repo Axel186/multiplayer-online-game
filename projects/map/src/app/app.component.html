@@ -1,0 +1,20 @@
+<div class="map">
+  <ul class="users">
+
+    <ng-container *ngFor="let user of (users$ | async); trackBy: trackByFn">
+      <li *ngIf="user.x > -1 && user.y > -1"
+          class="user animated bounceIn"
+          [ngStyle]="{'background-color': user.color, 'top': user.y * cellSize + 'px', 'left': user.x * cellSize + 'px'}">{{ user.name.substr(0, 1) }}
+      </li>
+    </ng-container>
+
+    <ng-container *ngIf="(cookie$ | async); let cookie">
+      <div *ngIf="cookie.x > -1" class="cookie" [ngStyle]="{'top': cookie.y * cellSize + 'px', 'left': cookie.x * cellSize + 'px'}">
+        <img src="/assets/cookie.png" alt="" class="animated bounce">
+      </div>
+    </ng-container>
+
+  </ul>
+</div>
+
+<app-users-list></app-users-list>
