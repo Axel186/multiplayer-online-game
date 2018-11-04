@@ -125,7 +125,8 @@ export function makeMovementDelayIfNeeded(userId: string, user: IUser, direction
     .then(() => user);
 }
 
-function getNextStep(position: number, step: number, isCase: boolean, value: number) {
+function getNextStep(prevPosition: number, step: number, isCase: boolean, value: number) {
+  let position = prevPosition;
   if (isCase) {
     position = value;
   } else {
