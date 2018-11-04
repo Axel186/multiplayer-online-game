@@ -33,10 +33,7 @@ export function getAvailablePosition(): Promise<IPosition> {
       const usersById = snapshot.val();
       const users = Object.keys(usersById).map(key => usersById[key]);
 
-      let counter = 0;
-
       while (!availablePositionFound) {
-        counter++;
         const newPosition: IPosition = getRandomPosition();
         const isPositionAvailable: boolean = !users.find(user => user.x === newPosition.x && user.y === newPosition.y);
 
@@ -44,8 +41,6 @@ export function getAvailablePosition(): Promise<IPosition> {
           availablePositionFound = true;
           Object.assign(position, newPosition);
         }
-
-        console.log('try', counter, newPosition, new Date().getTime());
       }
 
       return position;
