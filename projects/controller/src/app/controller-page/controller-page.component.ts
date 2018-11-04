@@ -19,12 +19,13 @@ export class ControllerPageComponent {
 
   onButtonPress(direction: string) {
     this.loading = true;
+    (window).navigator.vibrate(100);
 
     this.sendMoveAction(direction);
 
     setTimeout(() => {
       this.loading = false;
-    }, 1000);
+    }, 850);
   }
 
   initUser() {

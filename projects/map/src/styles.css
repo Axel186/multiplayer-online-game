@@ -65,7 +65,7 @@ app-users-list .users-list {
   display: flex;
   flex-wrap: wrap;
   max-height: 150px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 app-users-list .users-list li {
@@ -91,7 +91,7 @@ app-users-list .winner h2, app-users-list .start-screen h2 {
   font-size: 2em;
 }
 
-app-user-card .dot {
+.dot {
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -103,14 +103,14 @@ app-user-card .dot {
   margin-right: 10px;
 }
 
-app-user-card .dot.middle {
+.dot.middle {
   width: 48px;
   height: 48px;
   line-height: 48px;
   font-size: 24px;
 }
 
-app-user-card .dot.big {
+.dot.big {
   width: 72px;
   height: 72px;
   line-height: 72px;
