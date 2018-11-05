@@ -2,7 +2,7 @@
 
 This project was created for learning purpose and was presented in meetups.
 
-[![IMAGE ALT TEXT HERE](./demo)](Demo)
+[![Demo](./demo.gif)](Demo)
 
 ## Build
 
