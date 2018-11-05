@@ -1,8 +1,24 @@
 import * as random from 'random';
 import * as admin from 'firebase-admin';
-import {IDirection, IPosition, IUser} from './types';
 
+export interface IPosition {
+  x: number,
+  y: number
+}
 
+export interface IUser {
+  name: string,
+  x: number,
+  y: number,
+  score: number
+}
+
+export enum IDirection {
+  UP = 'up',
+  DOWN = 'down',
+  LEFT = 'left',
+  RIGHT = 'right'
+}
 /**
  * Set map size, config.
  */
@@ -30,7 +46,7 @@ export function getAvailablePosition(): Promise<IPosition> {
 
   return admin.database().ref('/users').once('value')
     .then((snapshot) => {
-      const usersById = snapshot.val();
+      const usersById = snapshot.val() || [];
       const users = Object.keys(usersById).map(key => usersById[key]);
 
       while (!availablePositionFound) {
