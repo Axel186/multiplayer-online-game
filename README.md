@@ -7,14 +7,15 @@ This project was created for learning purpose and was presented in meetups.
 ## Build
 
 Before you start, make sure to copy and edit the `config.default.ts` file to `config.ts`.
+
 Go to firebase directory, configure and deploy `Cloud functions`.
 
-### Controller
+### Controller app
 ```
 ng serve --project controller
 ```
 
-### Map
+### Map app
 ```
 ng serve --project map --port 4201
 ```
