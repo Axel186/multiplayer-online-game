@@ -7,10 +7,11 @@ import {
   getAvailablePosition,
   getNextPosition,
   getUserById,
+  IPosition,
   isPlayerEatCookie,
+  IUser,
   makeMovementDelayIfNeeded
 } from './helpers';
-import {IPosition, IUser} from './types';
 
 // Init Firebase Admin app.
 admin.initializeApp();
