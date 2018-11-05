@@ -22,20 +22,19 @@ export class LoginPageComponent {
       return alert('No name entered!');
     }
 
-    if (this.loading) {
-      return;
-    }
-
     this.loading = true;
 
     this.http.post(config.cloudFunctionsUrl + '/onUserCreate', {name: this.fullName})
       .toPromise()
       .then((user) => {
         Cookies.set('user', user);
+
         this.router.navigate(['/']);
       })
-      .catch(err => alert(err.message))
-      .then(() => this.loading = false);
+      .catch(err => {
+        alert(err.message);
+        this.loading = false;
+      });
   }
 
 }

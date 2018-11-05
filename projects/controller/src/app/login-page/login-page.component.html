@@ -4,11 +4,13 @@
   <hr>
 
   <form (submit)="onSubmit(); false">
-    <div class="form-group">
-      <label for="login-input">Enter your full name</label>
-      <input type="text" id="login-input" class="form-control" name="fullname" required="required" [(ngModel)]="fullName">
-    </div>
+    <fieldset [disabled]="loading">
+      <div class="form-group">
+        <label for="login-input">Enter your full name</label>
+        <input type="text" id="login-input" class="form-control" name="fullname" required="required" [(ngModel)]="fullName">
+      </div>
 
-    <button class="btn btn-primary" type="submit">Login</button>
+      <button class="btn btn-primary" type="submit">Login</button>
+    </fieldset>
   </form>
 </div>
