@@ -4,6 +4,18 @@ This project was created for learning purpose and was presented in meetups.
 
 [![Demo](./demo.gif)](Demo)
 
+## Demo
+You have to use 2 apps - Map & Controller.
+You can see your player on the "Map" once you login by using "Controller" app.
+* Map: https://game-map.romanaxelrod.com
+* Controller: https://game-ctrl.romanaxelrod.com
+
+
+## Tutorial (Hebrew language)
+Part 01 - https://www.youtube.com/watch?v=BnUMBJFKaoM
+
+Part 02 - https://www.youtube.com/watch?v=Wd_WlIWMd3k
+
 ## Build
 
 1. Before you start, make sure to copy and edit the `config.default.ts` file to `config.ts`.
